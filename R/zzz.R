@@ -14,7 +14,7 @@
         url <- paste0('https://s3.amazonaws.com/athena-downloads/drivers/JDBC/SimbaAthenaJDBC_', version, '/', file)
 
         ## download the jar file from AWS
-        try(download.file(url = url, destfile = path, mode = 'wb', method="curl", extra='-L')),
+        try(download.file(url = url, destfile = path, mode = 'wb', method="curl", extra='-L'),
             silent = FALSE)
 
     }
